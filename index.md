@@ -87,6 +87,7 @@ AUDIENCE
 Explain who your audience is.  (In particular, tell readers if the
 workshop is only open to people from a particular institution.
 {% endcomment %}
+{% comment}
 {% if site.carpentry == "swc" %}
 {% include swc/who.html %}
 {% elsif site.carpentry == "dc" %}
@@ -94,8 +95,15 @@ workshop is only open to people from a particular institution.
 {% elsif site.carpentry == "lc" %}
 {% include lc/who.html %}
 {% endif %}
-
-This workshop is intended for members of the Kansas State University Libraries to build their data-management skills using tidy data and OpenRefine. Guests invited by Libraries faculty and staff are also welcome! 
+{% endcomment %}
+<p id="who">
+  <strong>Who:</strong>
+  This workshop is intended for members of the Kansas State University Libraries to build their data-management skills using tidy data and OpenRefine. Guests invited by Libraries faculty and staff are also welcome! 
+  <strong>
+    You don't need to have any previous knowledge of the tools that
+    will be presented at the workshop.
+  </strong>
+</p>
 
 {% comment %}
 LOCATION
